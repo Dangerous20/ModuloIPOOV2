@@ -1,0 +1,37 @@
+package com.upao.sesion02.test;
+
+import java.util.List;
+
+import com.upao.sesion02.Fecha;
+import com.upao.sesion02.LineaPedido;
+import com.upao.sesion02.Pedido;
+import com.upao.sesion02.Producto;
+
+public class Test02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Fecha fpedido1 = new Fecha(19,03,2016);
+Fecha fpedido2 = new Fecha(20,03,2016);
+
+Producto pro1 = new Producto(1,"Pro1",12.3,TipoProducto.BEBIDAS);
+Producto pro2 = new Producto(2,"Pro2",24.3,TipoProducto.OTROS);
+
+LineaPedido l1 = new LineaPedido(2,pro1);
+LineaPedido l2 = new LineaPedido(3,pro2);
+
+Pedido ped1 = new Pedido();
+ped1.setNroPedido("PED-TRUJ-0023");
+ped1.setFechaPedido(fpedido1);
+ped1.getLineasPedido().add(11);
+ped1.getLineasPedido().add(12);
+
+//Cesta Pedidos
+List<Pedido> cestapedidos=
+new ArrayList<Pedido>();
+cestapedidos.add(ped1);
+//Reporte
+cestapedidos.stream().forEach(action);
+	}
+
+}

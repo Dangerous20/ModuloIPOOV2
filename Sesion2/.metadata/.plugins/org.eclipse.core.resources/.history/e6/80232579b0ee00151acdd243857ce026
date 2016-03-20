@@ -1,0 +1,31 @@
+package com.upao.sesion02.test;
+
+import com.upao.sesion02.Ciudad;
+import com.upao.sesion02.Fecha;
+import com.upao.sesion02.Persona;
+
+public class Test01 {
+
+	public Test01() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+         Fecha f1=new Fecha (2,10,1980);
+         Fecha f2=new Fecha (2,10,1980);
+         
+         Ciudad cn1=new Ciudad(44,"Trujillo");
+         Ciudad cn2=new Ciudad(01,"Lima");
+         
+         Ciudad cr1=new Ciudad(44,"Trujillo");
+         Ciudad cr2=new Ciudad(44,"Trujillo");
+         
+         Persona per1=new Persona (40738984,"Italo","Cervantes Prieto",f1,cn1,cr1);
+         Persona per2=new Persona (18206889,"Italo","Karina Sajami",f2,cn2,cr2);
+         
+         System.out.println(per1);
+         System.out.println(per2);
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.upao.sesion02.test;
+
+public class Test01 {
+
+	public static new Test01(String[]) {
+		// TODO Auto-generated constructor stub
+		Fecha f1=new Fecha(2,10,1980);
+		Fecha f2=new Fecha(27,10,1972);
+	}
+
+}
